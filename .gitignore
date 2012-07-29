@@ -1,0 +1,9 @@
+*.class
+grails-app/target/*
+*.iml
+*.ipr
+*.iws
+.idea/*
+.project
+.classpath
+.settings/*
