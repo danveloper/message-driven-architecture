@@ -15,25 +15,29 @@ grails.project.dependency.resolution = {
     log "error" // log level of Ivy resolver, either 'error', 'warn', 'info', 'debug' or 'verbose'
     checksums true // Whether to verify checksums on resolve
 
-    repositories {
-        inherits true // Whether to inherit repository definitions from plugins
-        grailsPlugins()
-        grailsHome()
-        grailsCentral()
-        mavenCentral()
+repositories {
+    inherits true // Whether to inherit repository definitions from plugins
+    grailsPlugins()
+    grailsHome()
+    grailsCentral()
+    mavenCentral()
 
-        // uncomment these to enable remote dependency resolution from public Maven repositories
-        //mavenCentral()
-        //mavenLocal()
-        //mavenRepo "http://snapshots.repository.codehaus.org"
-        //mavenRepo "http://repository.codehaus.org"
-        //mavenRepo "http://download.java.net/maven/2/"
-        //mavenRepo "http://repository.jboss.com/maven2/"
-    }
+    mavenRepo "http://maven.springframework.org/release"
+
+    // uncomment these to enable remote dependency resolution from public Maven repositories
+    //mavenCentral()
+    //mavenLocal()
+    //mavenRepo "http://snapshots.repository.codehaus.org"
+    //mavenRepo "http://repository.codehaus.org"
+    //mavenRepo "http://download.java.net/maven/2/"
+    //mavenRepo "http://repository.jboss.com/maven2/"
+}
     dependencies {
         // specify dependencies here under either 'build', 'compile', 'runtime', 'test' or 'provided' scopes eg.
 
         // runtime 'mysql:mysql-connector-java:5.1.16'
+
+        compile 'org.springframework.integration:spring-integration-core:2.1.0.RELEASE'
     }
 
     plugins {
