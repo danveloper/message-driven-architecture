@@ -41,7 +41,7 @@ repositories {
     }
 
     plugins {
-        runtime ":hibernate:$grailsVersion"
+        runtime ":hibernate:3.6.10.1"
         runtime ":jquery:1.7.1"
         runtime ":resources:1.1.6"
 
@@ -50,6 +50,6 @@ repositories {
         //runtime ":cached-resources:1.0"
         //runtime ":yui-minify-resources:0.1.4"
 
-        build ":tomcat:$grailsVersion"
+        build ":tomcat:7.0.41"
     }
 }
